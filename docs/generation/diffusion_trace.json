@@ -1,0 +1,365 @@
+{
+  "mode": "diffusion",
+  "checkpoint": "runs/jev_infill",
+  "seed": 20261025,
+  "input": {
+    "state": "Support ticket: My invoice was charged twice. I need the duplicate payment refunded today. The service is working normally. I do not want to cancel my subscription. Please contact me by email.",
+    "questions": [
+      {
+        "type": "noul",
+        "id": "q1",
+        "question": "Does the customer report a duplicate charge?"
+      },
+      {
+        "type": "noul",
+        "id": "q2",
+        "question": "Does the customer request a refund?"
+      },
+      {
+        "type": "noul",
+        "id": "q3",
+        "question": "Does the customer request action today?"
+      },
+      {
+        "type": "noul",
+        "id": "q4",
+        "question": "Is the service currently unavailable?"
+      },
+      {
+        "type": "noul",
+        "id": "q5",
+        "question": "Does the customer want to cancel the subscription?"
+      },
+      {
+        "type": "noul",
+        "id": "q6",
+        "question": "Does the customer request contact by email?"
+      },
+      {
+        "type": "noul",
+        "id": "q7",
+        "question": "Does the issue concern billing?"
+      },
+      {
+        "type": "noul",
+        "id": "q8",
+        "question": "Does the customer request a delivery address change?"
+      }
+    ],
+    "display_labels": [
+      "二重請求",
+      "返金要求",
+      "今日の対応",
+      "サービス停止",
+      "解約希望",
+      "メール連絡",
+      "請求の問題",
+      "住所変更"
+    ]
+  },
+  "answer_template": [
+    4913,
+    80,
+    16,
+    788,
+    830,
+    11,
+    330,
+    80,
+    17,
+    788,
+    830,
+    11,
+    330,
+    80,
+    18,
+    788,
+    830,
+    11,
+    330,
+    80,
+    19,
+    788,
+    830,
+    11,
+    330,
+    80,
+    20,
+    788,
+    830,
+    11,
+    330,
+    80,
+    21,
+    788,
+    830,
+    11,
+    330,
+    80,
+    22,
+    788,
+    830,
+    11,
+    330,
+    80,
+    23,
+    788,
+    830,
+    92,
+    151645
+  ],
+  "slots": [
+    4,
+    10,
+    16,
+    22,
+    28,
+    34,
+    40,
+    46
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "input_ids": [
+        137426,
+        108735,
+        72750,
+        1488,
+        55405,
+        144587,
+        31236,
+        15474
+      ],
+      "input_tokens": [
+        "سنة",
+        "酶",
+        ".unlink",
+        "ution",
+        "<QString",
+        "ﾋ",
+        "/con",
+        "Ins"
+      ],
+      "unrestricted_predictions": [
+        " true",
+        " true",
+        " true",
+        " false",
+        " false",
+        " true",
+        " true",
+        " false"
+      ],
+      "predictions": [
+        "true",
+        "true",
+        "true",
+        "false",
+        "false",
+        "true",
+        "true",
+        "false"
+      ],
+      "candidate_probs": [
+        {
+          "true": 0.9933071732521057,
+          "false": 0.006692850962281227
+        },
+        {
+          "true": 0.9859364032745361,
+          "false": 0.01406362745910883
+        },
+        {
+          "true": 0.8519527912139893,
+          "false": 0.14804719388484955
+        },
+        {
+          "true": 0.0009110511746257544,
+          "false": 0.9990889430046082
+        },
+        {
+          "true": 0.0017007224960252643,
+          "false": 0.9982993006706238
+        },
+        {
+          "true": 0.9820137619972229,
+          "false": 0.017986208200454712
+        },
+        {
+          "true": 0.9324533343315125,
+          "false": 0.06754668802022934
+        },
+        {
+          "true": 0.000626334105618298,
+          "false": 0.9993736743927002
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "input_ids": [
+        830,
+        830,
+        103984,
+        895,
+        895,
+        830,
+        830,
+        895
+      ],
+      "input_tokens": [
+        " true",
+        " true",
+        "委员会",
+        " false",
+        " false",
+        " true",
+        " true",
+        " false"
+      ],
+      "unrestricted_predictions": [
+        " true",
+        " true",
+        " true",
+        " false",
+        " false",
+        " true",
+        " true",
+        " false"
+      ],
+      "predictions": [
+        "true",
+        "true",
+        "true",
+        "false",
+        "false",
+        "true",
+        "true",
+        "false"
+      ],
+      "candidate_probs": [
+        {
+          "true": 1.0,
+          "false": 2.8453348122070565e-08
+        },
+        {
+          "true": 1.0,
+          "false": 3.850741947530878e-09
+        },
+        {
+          "true": 0.8933093547821045,
+          "false": 0.10669059306383133
+        },
+        {
+          "true": 3.2887492125155404e-06,
+          "false": 0.9999967217445374
+        },
+        {
+          "true": 6.144174676592229e-06,
+          "false": 0.9999938607215881
+        },
+        {
+          "true": 1.0,
+          "false": 3.3982678893096363e-09
+        },
+        {
+          "true": 0.9999999403953552,
+          "false": 7.734421103577915e-08
+        },
+        {
+          "true": 2.1444948288262822e-05,
+          "false": 0.9999785423278809
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "input_ids": [
+        830,
+        830,
+        830,
+        895,
+        895,
+        830,
+        830,
+        895
+      ],
+      "input_tokens": [
+        " true",
+        " true",
+        " true",
+        " false",
+        " false",
+        " true",
+        " true",
+        " false"
+      ],
+      "unrestricted_predictions": [
+        " true",
+        " true",
+        " true",
+        " false",
+        " false",
+        " true",
+        " true",
+        " false"
+      ],
+      "predictions": [
+        "true",
+        "true",
+        "true",
+        "false",
+        "false",
+        "true",
+        "true",
+        "false"
+      ],
+      "candidate_probs": [
+        {
+          "true": 0.9999999403953552,
+          "false": 5.315785145398877e-08
+        },
+        {
+          "true": 0.9999999403953552,
+          "false": 7.734421814120651e-08
+        },
+        {
+          "true": 0.9999995827674866,
+          "false": 3.927861769170704e-07
+        },
+        {
+          "true": 6.144174676592229e-06,
+          "false": 0.9999938607215881
+        },
+        {
+          "true": 6.144174676592229e-06,
+          "false": 0.9999938607215881
+        },
+        {
+          "true": 1.0,
+          "false": 2.8453348122070565e-08
+        },
+        {
+          "true": 0.9999998211860657,
+          "false": 1.855391076333035e-07
+        },
+        {
+          "true": 5.829126530443318e-05,
+          "false": 0.9999417066574097
+        }
+      ]
+    }
+  ],
+  "api_answers": [
+    "true",
+    "true",
+    "true",
+    "false",
+    "false",
+    "true",
+    "true",
+    "false"
+  ],
+  "display_note": "Diffusion cards show candidate-restricted argmax at each decode, not the raw noisy canvas or irreversible acceptance. API reads first. AR uses one forward per blank, not one forward per JSON character. Animation step rate is illustrative, not elapsed-time aligned."
+}

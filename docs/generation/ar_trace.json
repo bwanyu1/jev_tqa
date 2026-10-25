@@ -1,0 +1,206 @@
+{
+  "mode": "ar",
+  "checkpoint": "runs/ar_sft_v5",
+  "seed": 20261025,
+  "input": {
+    "state": "Support ticket: My invoice was charged twice. I need the duplicate payment refunded today. The service is working normally. I do not want to cancel my subscription. Please contact me by email.",
+    "questions": [
+      {
+        "type": "noul",
+        "id": "q1",
+        "question": "Does the customer report a duplicate charge?"
+      },
+      {
+        "type": "noul",
+        "id": "q2",
+        "question": "Does the customer request a refund?"
+      },
+      {
+        "type": "noul",
+        "id": "q3",
+        "question": "Does the customer request action today?"
+      },
+      {
+        "type": "noul",
+        "id": "q4",
+        "question": "Is the service currently unavailable?"
+      },
+      {
+        "type": "noul",
+        "id": "q5",
+        "question": "Does the customer want to cancel the subscription?"
+      },
+      {
+        "type": "noul",
+        "id": "q6",
+        "question": "Does the customer request contact by email?"
+      },
+      {
+        "type": "noul",
+        "id": "q7",
+        "question": "Does the issue concern billing?"
+      },
+      {
+        "type": "noul",
+        "id": "q8",
+        "question": "Does the customer request a delivery address change?"
+      }
+    ],
+    "display_labels": [
+      "二重請求",
+      "返金要求",
+      "今日の対応",
+      "サービス停止",
+      "解約希望",
+      "メール連絡",
+      "請求の問題",
+      "住所変更"
+    ]
+  },
+  "answer_template": [
+    4913,
+    80,
+    16,
+    788,
+    830,
+    11,
+    330,
+    80,
+    17,
+    788,
+    830,
+    11,
+    330,
+    80,
+    18,
+    788,
+    830,
+    11,
+    330,
+    80,
+    19,
+    788,
+    830,
+    11,
+    330,
+    80,
+    20,
+    788,
+    830,
+    11,
+    330,
+    80,
+    21,
+    788,
+    830,
+    11,
+    330,
+    80,
+    22,
+    788,
+    830,
+    11,
+    330,
+    80,
+    23,
+    788,
+    830,
+    92,
+    151645
+  ],
+  "slots": [
+    4,
+    10,
+    16,
+    22,
+    28,
+    34,
+    40,
+    46
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "question_id": "q1",
+      "prediction": "true",
+      "candidate_probs": {
+        "true": 0.9992903470993042,
+        "false": 0.0007096703629940748
+      }
+    },
+    {
+      "step": 2,
+      "question_id": "q2",
+      "prediction": "true",
+      "candidate_probs": {
+        "true": 0.9959298372268677,
+        "false": 0.00407013762742281
+      }
+    },
+    {
+      "step": 3,
+      "question_id": "q3",
+      "prediction": "true",
+      "candidate_probs": {
+        "true": 0.9770225882530212,
+        "false": 0.022977370768785477
+      }
+    },
+    {
+      "step": 4,
+      "question_id": "q4",
+      "prediction": "false",
+      "candidate_probs": {
+        "true": 0.000552778597921133,
+        "false": 0.999447226524353
+      }
+    },
+    {
+      "step": 5,
+      "question_id": "q5",
+      "prediction": "false",
+      "candidate_probs": {
+        "true": 0.001700722612440586,
+        "false": 0.9982993006706238
+      }
+    },
+    {
+      "step": 6,
+      "question_id": "q6",
+      "prediction": "true",
+      "candidate_probs": {
+        "true": 0.9971990585327148,
+        "false": 0.0028009272646158934
+      }
+    },
+    {
+      "step": 7,
+      "question_id": "q7",
+      "prediction": "true",
+      "candidate_probs": {
+        "true": 0.9959298968315125,
+        "false": 0.00407013762742281
+      }
+    },
+    {
+      "step": 8,
+      "question_id": "q8",
+      "prediction": "false",
+      "candidate_probs": {
+        "true": 0.00023050671734381467,
+        "false": 0.9997695088386536
+      }
+    }
+  ],
+  "api_answers": [
+    "true",
+    "true",
+    "true",
+    "false",
+    "false",
+    "true",
+    "true",
+    "false"
+  ],
+  "display_note": "Diffusion cards show candidate-restricted argmax at each decode, not the raw noisy canvas or irreversible acceptance. API reads first. AR uses one forward per blank, not one forward per JSON character. Animation step rate is illustrative, not elapsed-time aligned."
+}

@@ -4,6 +4,20 @@
 
 この非公開リポジトリには、実装・最終2種類のモデル・共通のベースモデル・実際に試した入力と出力・検証レポートをまとめています。
 
+## ARと拡散Jevの回答過程
+
+同じ問い合わせの8項目に答える、**最終ARと最終拡散Jevの実際の推論ログ**をGIFにしました。
+
+![最終ARと拡散Jevの回答過程](docs/generation/jev_comparison.gif)
+
+- **AR**：回答の穴を左から1つずつ埋め、先に答えた値を使って次へ進みます。
+- **拡散Jev**：全ての穴に乱数を入れて開始し、全8項目の予測を同時に計算・更新します。
+- 黄色は、そのステップで追加・変化した予測。表示は候補内で最大の予測と確率であり、途中の乱数入力そのものではありません。
+
+GIFは更新ステップ順の再生で、実時間の速度比較ではありません。拡散の入力エンコードは表示外です。今回のARは判定用の穴を1つずつ埋める実装で、JSON全体を1トークンずつ生成する通常の自由文生成とは異なります。
+
+**現在の最終JevのAPIは、反復後ではなく初回の予測・確率を返します。** 反復するほど正しくなるとは限りません。初回・各反復と実際のAPI返り値を[元ログと説明](docs/generation/README.md)で確認できます。これは最終判定モデルの過程であり、汎用拡散v3の自由文生成の実測として扱いません。
+
 ## 入っているモデル
 
 | モデル | 保存先 | 用途 |
@@ -143,7 +157,7 @@ HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
 | [動画](docs/Diffusion-Jev_video_practical.md) | 正順・逆順・静止画と処理時間 |
 | [作業動作の再定義](docs/Diffusion-Jev_video_phase_definitions.md) | 名称のみ／詳細定義の比較 |
 | [今後の課題](docs/Diffusion-Jev_future_work.md) | 定義・学習・順次入力、日本語、SD·RL |
-| [発表スライドPDF](docs/presentation/Diffusion-Jev_slides.pdf) | 本編42枚＋補足13枚 |
+| [発表スライドPDF](docs/presentation/Diffusion-Jev_slides.pdf) | 本編44枚＋補足13枚 |
 | [開発記録](docs/DEVELOPMENT_LOG.md) | 実施内容の履歴 |
 
 ## ディレクトリ
