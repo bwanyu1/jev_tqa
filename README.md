@@ -163,7 +163,7 @@ runs/toy/                  小さな動作確認用チェックポイント
 
 ## 検証範囲と出典
 
-新しい配布用CLIは引数・構文を確認し、既存テストは19件成功。モデルの元ファイル46件は取得元とのSHA-256を照合済み。本体1ファイルを新規に復元し、取得元と同じSHA-256になることも確認しました。新しいCLIでのGPU推論と、Macでの実モデル推論はまだ実施していません。記載した性能値は既存のGPU試用によるものです。
+新しい配布用CLIは引数・構文を確認し、既存テストは19件成功。別ディレクトリへのclone、Git LFS経由のJev重み1ファイルの取得・SHA-256一致、全31個のLFSオブジェクトの取得可能状態も確認しました。モデルの元ファイル46件は取得元とのSHA-256を照合済み。本体1ファイルを新規に復元し、取得元と同じSHA-256になることも確認しました。新しいCLIでのGPU推論と、Macでの実モデル推論はまだ実施していません。記載した性能値は既存のGPU試用によるものです。
 
 ベースモデルは [Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)、固定revisionは `ebb281ec70b05090aa6165b016eac8ec08e71b17`。モデル本体の説明とライセンスは同梱の [モデルカード](models/final_diffusion/backbone/README.md) を参照してください。動画の出典は [lerobot/aloha_static_coffee](https://huggingface.co/datasets/lerobot/aloha_static_coffee) で、固定revisionと元パスを [provenance.json](docs/video_practical/source/provenance.json) に保存しています。
 
