@@ -1,0 +1,25 @@
+{
+  "backbone": "Qwen/Qwen3-VL-4B-Instruct",
+  "canvas_length": 256,
+  "args": {
+    "backbone": "Qwen/Qwen3-VL-4B-Instruct",
+    "init": null,
+    "data": "data/general_12000.jsonl",
+    "out": "runs/general_12000",
+    "lora_rank": 64,
+    "canvas": 256,
+    "canvases": 2,
+    "prompt_len": 512,
+    "batch": 2,
+    "lr": 0.0001,
+    "end_lr": 1e-05,
+    "steps": 3000,
+    "warmup": 100,
+    "weight_decay": 0.0001,
+    "no_encoder_loss": true,
+    "grad_checkpointing": true,
+    "seed": 0,
+    "log_every": 50,
+    "save_every": 1000
+  }
+}

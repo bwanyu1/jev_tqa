@@ -1,0 +1,9 @@
+{
+  "dataset": "lerobot/aloha_static_coffee",
+  "revision": "7da22eb685a613a28bcc58aa0bf7d1094578234a",
+  "source_path": "videos/chunk-000/observation.images.cam_high/episode_000000.mp4",
+  "url": "https://huggingface.co/datasets/lerobot/aloha_static_coffee/resolve/7da22eb685a613a28bcc58aa0bf7d1094578234a/videos/chunk-000/observation.images.cam_high/episode_000000.mp4",
+  "declared_size": 9964446,
+  "license": "MIT",
+  "purpose": "new manual annotation trial; not benchmark scoring"
+}

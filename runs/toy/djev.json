@@ -1,0 +1,23 @@
+{
+  "backbone": "Qwen/Qwen3-0.6B",
+  "canvas_length": 32,
+  "args": {
+    "backbone": "Qwen/Qwen3-0.6B",
+    "init": null,
+    "data": "examples/toy_decisions.jsonl",
+    "out": "runs/toy",
+    "lora_rank": 8,
+    "canvas": 32,
+    "canvases": 1,
+    "prompt_len": 256,
+    "batch": 2,
+    "lr": 0.0003,
+    "end_lr": 3e-05,
+    "steps": 4,
+    "warmup": 1,
+    "weight_decay": 0.0001,
+    "no_encoder_loss": false,
+    "seed": 0,
+    "log_every": 1
+  }
+}

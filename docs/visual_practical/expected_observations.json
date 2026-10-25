@@ -1,0 +1,87 @@
+{
+  "ui_empty": {
+    "email": "2",
+    "error": "2",
+    "button": "2",
+    "sent": "2",
+    "next": "1"
+  },
+  "ui_ready": {
+    "email": "1",
+    "error": "2",
+    "button": "1",
+    "sent": "2",
+    "next": "3"
+  },
+  "ui_invalid": {
+    "email": "1",
+    "error": "1",
+    "button": "2",
+    "sent": "2",
+    "next": "2"
+  },
+  "ui_loading": {
+    "email": "1",
+    "error": "2",
+    "button": "2",
+    "sent": "2",
+    "next": "4"
+  },
+  "ui_success": {
+    "email": "1",
+    "error": "2",
+    "button": "2",
+    "sent": "1",
+    "next": "5"
+  },
+  "ui_cropped": {
+    "email": "1",
+    "error": "2",
+    "button": "3",
+    "sent": "2",
+    "next": "6"
+  },
+  "ui_no_image": {
+    "email": "3",
+    "error": "3",
+    "button": "3",
+    "sent": "3",
+    "next": "6"
+  },
+  "inspect_normal": {
+    "bolts": "1",
+    "lamp": "1",
+    "cable": "1",
+    "decision": "1"
+  },
+  "inspect_missing_bolt": {
+    "bolts": "2",
+    "lamp": "1",
+    "cable": "1",
+    "decision": "2"
+  },
+  "inspect_unplugged": {
+    "bolts": "1",
+    "lamp": "1",
+    "cable": "2",
+    "decision": "2"
+  },
+  "inspect_covered": {
+    "bolts": "3",
+    "lamp": "1",
+    "cable": "1",
+    "decision": "3"
+  },
+  "inspect_red_lamp": {
+    "bolts": "1",
+    "lamp": "2",
+    "cable": "1",
+    "decision": "2"
+  },
+  "inspect_no_image": {
+    "bolts": "3",
+    "lamp": "3",
+    "cable": "3",
+    "decision": "3"
+  }
+}

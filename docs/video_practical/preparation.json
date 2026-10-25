@@ -1,0 +1,17 @@
+{
+  "source": "docs/video_practical/source/aloha_coffee_ep0_high.mp4",
+  "source_interval_s": [
+    0,
+    12.8
+  ],
+  "output_fps": 10,
+  "output_frames": 128,
+  "forward": "coffee_forward.mp4",
+  "reverse": "frame-reversed forward clip",
+  "still_control": "last decoded frame of forward clip",
+  "images_size": [
+    640,
+    480
+  ],
+  "annotation_status": "preliminary labels to be inspected; no independent human ground truth"
+}

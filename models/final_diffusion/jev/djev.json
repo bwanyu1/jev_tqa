@@ -1,0 +1,25 @@
+{
+  "backbone": "Qwen/Qwen3-VL-4B-Instruct",
+  "canvas_length": 128,
+  "kind": "infill",
+  "args": {
+    "cmd": "train",
+    "backbone": "Qwen/Qwen3-VL-4B-Instruct",
+    "init": "runs/general_v3",
+    "data": [
+      "data/decisions_mix_v4.jsonl",
+      "data/many_questions_train.jsonl"
+    ],
+    "out": "runs/jev_infill",
+    "steps": 6000,
+    "warmup": 100,
+    "lr": 0.0001,
+    "end_lr": 1e-05,
+    "batch": 2,
+    "prompt_len": 1024,
+    "canvas": 128,
+    "lora_rank": 8,
+    "log_every": 50,
+    "seed": 0
+  }
+}

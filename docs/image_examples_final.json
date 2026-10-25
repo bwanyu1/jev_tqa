@@ -1,0 +1,161 @@
+[
+  {
+    "evaluation_row_1based": 30,
+    "input": {
+      "state": "Question about the photo.",
+      "media": [
+        {
+          "type": "image",
+          "path": "data/images/aok_10.jpg"
+        }
+      ],
+      "source": "a-okvqa",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "answer",
+          "question": "What is holding the man's feet?",
+          "options": [
+            "horse shoes",
+            "cleats",
+            "shoes",
+            "stirrups"
+          ]
+        }
+      ],
+      "answers": {
+        "answer": "4"
+      }
+    },
+    "diffusion_checkpoint": "runs/jev_infill",
+    "diffusion_result": {
+      "gold": {
+        "answer": "4"
+      },
+      "source": "a-okvqa",
+      "k": null,
+      "seconds": 0.3996053689625114,
+      "forwards": 2,
+      "decisions": {
+        "answer": {
+          "probs_by_readout": {
+            "first": {
+              "1": 0.05953697860240936,
+              "2": 0.0020372436847537756,
+              "3": 0.007110677659511566,
+              "4": 0.9313150644302368
+            },
+            "final": {
+              "1": 6.825597154147545e-08,
+              "2": 8.315279274029308e-07,
+              "3": 3.6534789416009517e-08,
+              "4": 0.9999990463256836
+            }
+          },
+          "probs": {
+            "1": 0.05953697860240936,
+            "2": 0.0020372436847537756,
+            "3": 0.007110677659511566,
+            "4": 0.9313150644302368
+          },
+          "answer": "4"
+        }
+      }
+    },
+    "ar_checkpoint": "runs/ar_sft_v5",
+    "ar_result": {
+      "gold": {
+        "answer": "4"
+      },
+      "source": "a-okvqa",
+      "decisions": {
+        "answer": {
+          "answer": "4",
+          "probs": {
+            "1": 0.0011674141278490424,
+            "2": 0.000624871754553169,
+            "3": 0.0011674141278490424,
+            "4": 0.997040331363678
+          }
+        }
+      }
+    }
+  },
+  {
+    "evaluation_row_1based": 78,
+    "input": {
+      "state": "Science question about the image.\nContext: The images below show two pairs of magnets. The magnets in different pairs do not affect each other. All the magnets shown are made of the same material.",
+      "media": [
+        {
+          "type": "image",
+          "path": "data/images/sqa_40.png"
+        }
+      ],
+      "source": "scienceqa",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "answer",
+          "question": "Think about the magnetic force between the magnets in each pair. Which of the following statements is true?",
+          "options": [
+            "The strength of the magnetic force is the same in both pairs.",
+            "The magnetic force is weaker in Pair 2.",
+            "The magnetic force is weaker in Pair 1."
+          ]
+        }
+      ],
+      "answers": {
+        "answer": "3"
+      }
+    },
+    "diffusion_checkpoint": "runs/jev_infill",
+    "diffusion_result": {
+      "gold": {
+        "answer": "3"
+      },
+      "source": "scienceqa",
+      "k": null,
+      "seconds": 0.32741114299278706,
+      "forwards": 2,
+      "decisions": {
+        "answer": {
+          "probs_by_readout": {
+            "first": {
+              "1": 0.090816929936409,
+              "2": 0.316982239484787,
+              "3": 0.592200756072998
+            },
+            "final": {
+              "1": 6.023573462243803e-08,
+              "2": 1.2751903000207676e-07,
+              "3": 0.9999998211860657
+            }
+          },
+          "probs": {
+            "1": 0.090816929936409,
+            "2": 0.316982239484787,
+            "3": 0.592200756072998
+          },
+          "answer": "3"
+        }
+      }
+    },
+    "ar_checkpoint": "runs/ar_sft_v5",
+    "ar_result": {
+      "gold": {
+        "answer": "3"
+      },
+      "source": "scienceqa",
+      "decisions": {
+        "answer": {
+          "answer": "3",
+          "probs": {
+            "1": 0.005001521203666925,
+            "2": 0.041877225041389465,
+            "3": 0.9531212449073792
+          }
+        }
+      }
+    }
+  }
+]

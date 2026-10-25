@@ -1,0 +1,65 @@
+{
+  "format": "concatenate binary parts in listed order; identical original bytes",
+  "part_size": 1073741824,
+  "files": [
+    {
+      "path": "models/final_diffusion/backbone/model-00001-of-00002.safetensors",
+      "size": 4967229296,
+      "sha256": "30a01a0556622645a3cce87b655bbbbbc1f170c196099f1b666c93202c3339a9",
+      "parts": [
+        {
+          "path": "models/final_diffusion/backbone/model-00001-of-00002.safetensors.part-000",
+          "size": 1073741824,
+          "sha256": "17eb15cb7024e65703fe953caf1023d1d6c65317fe5e842893d0ac4fc7da6455"
+        },
+        {
+          "path": "models/final_diffusion/backbone/model-00001-of-00002.safetensors.part-001",
+          "size": 1073741824,
+          "sha256": "9b62e90b164395154f69ce33c61b4bcdb229b91ebc68d78cb36f911a29e64753"
+        },
+        {
+          "path": "models/final_diffusion/backbone/model-00001-of-00002.safetensors.part-002",
+          "size": 1073741824,
+          "sha256": "4102050e7d62211102e556e0a66bd04d25cd860a8c3f87674c40893341d3e0ef"
+        },
+        {
+          "path": "models/final_diffusion/backbone/model-00001-of-00002.safetensors.part-003",
+          "size": 1073741824,
+          "sha256": "5dff11be835396480b0dcb045fa4df352a31bbf01b616a72b3d1d5d5c048e2de"
+        },
+        {
+          "path": "models/final_diffusion/backbone/model-00001-of-00002.safetensors.part-004",
+          "size": 672262000,
+          "sha256": "997f8ee707232d7cf6d29a5cd16b38a27a86293b245c23ec52b707dcf99e6bb8"
+        }
+      ]
+    },
+    {
+      "path": "models/final_diffusion/backbone/model-00002-of-00002.safetensors",
+      "size": 3908490048,
+      "sha256": "046296a2a387efb43b0c997d5833c789604d168834f6e0d3064bf7bb13d002a6",
+      "parts": [
+        {
+          "path": "models/final_diffusion/backbone/model-00002-of-00002.safetensors.part-000",
+          "size": 1073741824,
+          "sha256": "fb601c37df7be8eb5354f851cc16a6e843e08187bf9e920d07d26263badb12cf"
+        },
+        {
+          "path": "models/final_diffusion/backbone/model-00002-of-00002.safetensors.part-001",
+          "size": 1073741824,
+          "sha256": "3e2df1432a2b4c1427e3925f4f644b98badd0d6d202defca2bc67366000cae3c"
+        },
+        {
+          "path": "models/final_diffusion/backbone/model-00002-of-00002.safetensors.part-002",
+          "size": 1073741824,
+          "sha256": "38d098c8ca75c9de5fbd3e83cf3badd89649535e4efafa420d06d7c2d1a02b10"
+        },
+        {
+          "path": "models/final_diffusion/backbone/model-00002-of-00002.safetensors.part-003",
+          "size": 687264576,
+          "sha256": "bee2b1feb76e4039c249d3879f68324418ec24a97ead4fff37f3ae66627793d5"
+        }
+      ]
+    }
+  ]
+}

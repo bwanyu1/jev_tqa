@@ -1,0 +1,30 @@
+{
+  "state": "Support ticket: my invoice was charged twice and I need a refund today",
+  "questions": [
+    {
+      "type": "noul",
+      "id": "urgent",
+      "question": "Is the ticket urgent?"
+    },
+    {
+      "type": "score",
+      "id": "anger",
+      "question": "How angry is the customer?",
+      "levels": [
+        "calm",
+        "annoyed",
+        "angry"
+      ]
+    },
+    {
+      "type": "choice",
+      "id": "route",
+      "question": "Who should handle it?",
+      "options": [
+        "bot",
+        "human agent",
+        "engineer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "presence_yes": {
+    "present": "1"
+  },
+  "presence_no": {
+    "present": "2"
+  },
+  "presence_near": {
+    "present": "2"
+  },
+  "same_exact": {
+    "category": "1",
+    "design": "1"
+  },
+  "same_scaled": {
+    "category": "1",
+    "design": "1"
+  },
+  "different_color": {
+    "category": "1",
+    "design": "2"
+  },
+  "different_symbol": {
+    "category": "1",
+    "design": "2"
+  },
+  "hidden_symbol": {
+    "category": "1",
+    "design": "3"
+  },
+  "select_image4": {
+    "match": "3",
+    "m2": "2",
+    "m3": "2",
+    "m4": "1",
+    "m5": "2",
+    "m6": "2"
+  },
+  "select_image6": {
+    "match": "5",
+    "m2": "2",
+    "m3": "2",
+    "m4": "2",
+    "m5": "2",
+    "m6": "1"
+  },
+  "select_none": {
+    "match": "6",
+    "m2": "2",
+    "m3": "2",
+    "m4": "2",
+    "m5": "2",
+    "m6": "2"
+  },
+  "photo_crop_present": {
+    "present": "1"
+  },
+  "photo_crop_absent": {
+    "present": "2"
+  },
+  "photo_select_image5": {
+    "match": "4"
+  }
+}
